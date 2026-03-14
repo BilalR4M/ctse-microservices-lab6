@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 public class Inventory {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @Column(name = "item_name", nullable = false, unique = true)
